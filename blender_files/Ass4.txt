@@ -1,0 +1,55 @@
+Dokumentation Assingment 4:
+
+Plan:
+    - Diver under Water surrounded by a schwarm of Squid
+    - a scenery with ruins on the ground and some deep see monstrosity in the background (my motivation was a bit to big at the start this part didnt made 
+    
+Squid Swarm:
+    - created the base model pretty simple for the squid with the tentakle seperatly
+    - rigged and animated one tentacle and saved the animation in the action editor (so i can edit it for all 8 later)
+    - copy pasted the animation wit tentacle to have 8 of them
+    - loop the animation every 30 
+    - made it look like he's pushing forwards
+    - created a particle system and spawemed an instance of the squid as a boid
+    - ajust some values so it swims like a swarm
+
+Base Mesh:
+    - i looked around for a model to work with but doesnt reallt felt happy with free models i found
+    - so i decided to made one from scratch (really bad decition)
+    - this cost me around 2 workdays to create with good topology
+    - to make it short, i sculped a man out of sudevided cubes, remeshed those and with the help of shrink wreap modifier and patients i remeshed it.
+    - used this tutorial-series as a guide: https://www.youtube.com/watch?v=J2_uiUEcY7w&list=PLe0O-ypJqvKw6meu68TlU0_motrjcnrva&pp=iAQB
+    - i included the blendfile caled baseModelMale.blend or smth    
+    - created the file diver.blend from it
+    - made all the assesory's and clothing (not much workflow to describe there)
+    
+Rigging:
+    - when crating the armiture i included a bone for the elbow and knee in addition to the legs and arms. this makes it a bit more easy with the IK's i think
+    - I prepered the controll bones for the legs and arms IK's, also decided to made one for the spine but without pole
+    - also rigged the hands cause there had enough detail (didnt end up animating them though)
+    - symetriced everything view times cause i didnt name everything probaly
+    - then I binded the mesh to the armature with automatic weights.
+    - some problems with the weight could be seen especially wiht the pretty lose harnest, the Oxygen tank on the bag
+    - also the chest folded into it self so i added some bones for his chest
+    - it took me quite a bit to figure out how to use the weight painting interface. I'm not to happy with the result but I could reduce the error quite a bit
+    - i also added the IK's itself. the rotation needet a bit adjustment but i didnt hade big issues. (shift i hotkey)
+    - decided not to copy the rotation of the target bones for the pole bones to have a bit more controll
+    - in retrospective I should have made the hip bones look in a differnt direction couse it made everything a bit inflexible
+    
+Animation:
+    - I hadnt much time left (sadly cause I wasted so much time on the model) so I kept it simple
+    - just some keyframes on the arms legs and neck to make him look like he's swimming on the spot
+    - added the squid from my squid.blend file
+    - took me a wile to make them swim as a swarm again sadly but they are there. I wish i could could have made them swim more agile
+    - a forcefield pushes them in to a little cuve (not to vidible sadly)
+    - then i added a bit of noise modefier in the graph editor for the camera (was new for me so its not perfect)
+    
+Last But not Least:
+    - added some Materials. 
+    - cause of time the material for the diver is just a simple BSDF with an color
+    - the squids i gave a bit more texture with the magic texture
+    - for the background i sadly could note make the fog/waterdensity effect i liked to have cause of time and skill issue so i searched for a free underwater HDRI an plugged it in the background
+    - (might rework all this and the animation as well the boid particle spawner for the next assingment when i add UV unwreapped buildings in the back and rearrange the camera and everything)
+    
+PS:
+    - the render took me a bit longer then expected so i added it ca. 1.5 h later to the cloud. hope this is 
